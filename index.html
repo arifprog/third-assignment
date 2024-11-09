@@ -14,13 +14,13 @@
                     <img src="image/c4u full logo_2022 1.png" alt="logo">
                 </div>
                 <div>
-                    <button class="block p-3 md:hidden dark:text-white">
+                    <button class="block p-3 md:hidden dark:text-white" aria-controls="mobile-menu" aria-expanded="false" id="hamburger-button">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                   
-                    <div class="hidden md:flex space-x-7 text-white">
+                    <div class="hidden flex gap-1 md:flex md:space-x-7 text-white" id="mobile-menu" >
                       <a href="#" class="text-base hover:text-[#f44355] hover:underline">Home</a>
                       <a href="#" class="text-base hover:text-[#f44355] hover:underline">About Us</a>
                       <a href="#" class="text-base hover:text-[#f44355] hover:underline">Upskill</a>
@@ -105,12 +105,21 @@
 
         </div>
      </section>
+     
 
 
      <script>
         const htmlTag= document.getElementById("htmlTag");
         document.getElementById("switch").addEventListener("click",function(){
             htmlTag.classList.toggle("dark");
+        });
+
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburgerButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');   
+
         });
      </script>
 
