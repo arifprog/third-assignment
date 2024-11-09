@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
-<body class="font-jakarta">
+<body class="font-jakarta bg-white dark:bg-gray-900">
     <header class="w-full h-[75px]">
         <div class="container">
             <nav class="flex justify-between items-center px-1 md:px-6 py-3">
-                <div>
+                <div class="dark:bg-teal-500">
                     <img src="image/c4u full logo_2022 1.png" alt="logo">
                 </div>
                 <div>
-                    <button class="block p-3 md:hidden">
+                    <button class="block p-3 md:hidden dark:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                   
-                    <div class="hidden md:flex space-x-7">
+                    <div class="hidden md:flex space-x-7 text-white">
                       <a href="#" class="text-base hover:text-[#f44355] hover:underline">Home</a>
                       <a href="#" class="text-base hover:text-[#f44355] hover:underline">About Us</a>
                       <a href="#" class="text-base hover:text-[#f44355] hover:underline">Upskill</a>
@@ -35,8 +35,8 @@
                         </button>
                     </div>
                     <div>
-                        <button class=" px-4 py-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <button class=" px-4 py-3" id="switch">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:stroke-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                             </svg>
                         </button>
@@ -45,15 +45,13 @@
             </nav>
         </div>
     </header>
-    
-    <!-- To create hero section -->
 
-     <section class="w-full h-[660px] bg-[#FAFAFA]">
+     <section class="w-full h-[660px] bg-[#FAFAFA] dark:bg-gray-900">
         <div class=" grid grid-rows-2 md:grid-cols-2">
             <div class="h-[660px]">
                 <div class="mx-1 my-6 space-y-8 md:mx-24">
                     <div class="w-[248px] h-[23px]">
-                        <div class="flex items-center">
+                        <div class="flex items-center dark:text-white">
                             <span class="font-bold text-lg">Discover</span>
                             <hr class="border-t-4 border-red-500 w-10 h-px mr-px mt-1 ml-[3px]" />
                             <span class="font-bold text-lg">Interact</span>
@@ -61,38 +59,38 @@
                             <span class="font-bold text-lg">Engage</span>
                         </div>
                     </div>
-                    <div class="w-full md:w-[632px] h-[243px] font-semibold md:font-extrabold text-[55px] md:text-[64px] leading-[1.3] py- px-">
+                    <div class="w-full md:w-[632px] h-[243px] font-semibold md:font-extrabold text-[55px] md:text-[64px] leading-[1.3] py- px- dark:text-teal-500">
                         Google <br><span class="border-b-4 border-red-500 text-red-500">IT Support</span><br>Certificate
                     </div>
-                    <div class="w-full md:w-[552px] h-[54px] text-md md:text-lg">
+                    <div class="w-full md:w-[552px] h-[54px] text-md md:text-lg dark:text-white">
                         <p>This is your path to a career in IT. In this program, you’ll learn in-demand skills with no degree or experience required. </p>
                     </div>
                     <div class="w-full md:w-[536px] h-[120px] flex flex-row justify-between items-center text-center font-[fonttwo]">
                         <div>
                             <span class="text-[#00FF84] text-xl md:text-2xl font-semibold">438</span> <br>
-                            <span class="text-sm md:text-lg text-[#2D3142]">Videos</span>
+                            <span class="text-sm md:text-lg text-[#2D3142] dark:text-yellow-200">Videos</span>
                         </div>
                         <div>
                             <span class="text-[#00FF84] text-xl md:text-2xl font-semibold">151</span> <br>
-                            <span class="text-sm md:text-lg text-[#2D3142]">Readings</span>
+                            <span class="text-sm md:text-lg text-[#2D3142] dark:text-yellow-200">Readings</span>
                         </div>
                         <div>
                             <span class="text-[#00FF84] text-xl md:text-2xl font-semibold">108 </span> <br>
-                            <span class="text-sm md:text-lg text-[#2D3142]">Quizzes</span>
+                            <span class="text-sm md:text-lg text-[#2D3142] dark:text-yellow-200">Quizzes</span>
                         </div>
                         <div>
                             <span class="text-[#00FF84] text-xl md:text-2xl font-semibold">24</span> <br>
-                            <span class="text-sm md:text-lg text-[#2D3142]"> Exercises</span>
+                            <span class="text-sm md:text-lg text-[#2D3142] dark:text-yellow-200"> Exercises</span>
                         </div>
                         <div>
                             <span class="text-[#00FF84] text-xl md:text-2xl font-semibold">4</span> <br>
-                            <span class="text-sm md:text-lg text-[#2D3142]">Assigments</span>
+                            <span class="text-sm md:text-lg text-[#2D3142] dark:text-yellow-200">Assigments</span>
                         </div>
 
                     </div>
                     <div class="w-full md:w-[330px] h-[58px] flex flex-row gap-x-2 md:gap-6 items-center">
                         <button class="w-[136px] h-[58px] rounded-lg text-white bg-[#F44335] hover:bg-green-300/85 hover:text-black">Sign up</button>
-                        <button class="w-[168px] h-[58px] rounded-md text-[#072125] bg-[#fff] hover:scale-105 hover:translate-y-0 border border-gray-300 shadow-md" >Learn more</button>
+                        <button class="w-[168px] h-[58px] rounded-md text-[#072125] bg-[#fff] hover:scale-105 hover:translate-y-0 border border-gray-300 shadow-md transition duration-500" >Learn more</button>
 
                     </div>
                     
@@ -107,6 +105,14 @@
 
         </div>
      </section>
+
+
+     <script>
+        const htmlTag= document.getElementById("htmlTag");
+        document.getElementById("switch").addEventListener("click",function(){
+            htmlTag.classList.toggle("dark");
+        });
+     </script>
 
 </body>
 </html>
