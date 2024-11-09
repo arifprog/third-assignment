@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       "fontFamily":{
-        'jakarta':['"Plus Jakarta Sans", sans-serif']
+        'jakarta':['"Plus Jakarta Sans", sans-serif'],
+        'fonttwo':['"Inter", sans-serif'],
       }
     },
   },
